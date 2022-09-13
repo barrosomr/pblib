@@ -1,0 +1,16 @@
+Ansible Estudo
+==============
+
+Ordem de predecessora da busca do arquivo de configuração do Ansible:
+1) Busca na variavel de ambiente ANSIBLE_CONFIG;
+2) diretorio onde os comandos ansible são excutados. ex: ansible.cfg
+3) diretorio home do usuario que está executando o ansible. ex /home/user/.ansible.cfg
+4) E por fim o diretorio /etc/ansible/ansible.cfg
+
+Para verificar onde está localizado o arquivo ansible.cfg você seve usar o comando:
+$ ansible --version
+
+uma outra forma de vizualizar onde qual o arquivos ansible.cfg está usando executar o seguinte comando:
+$ ansible localhost --list-hosts -v
+
+
